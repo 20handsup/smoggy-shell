@@ -1,32 +1,36 @@
 ---
-
+const pageTitle = "My Astro Learning Blog";
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+
     <style>
       .page {
         margin-inline: auto;
         max-width: 65vw;
       }
     </style>
-    </style>
-		<title>Astro Blog</title>
-	</head>
-	<body>
+    <title>{pageTitle}</title>
+  </head>
 
+  <body>
     <div class="page">
       <a href="/">Home</a>
       <a href="/about/">About</a>
       <a href="/blog/">Blog</a>
-      
-          <h1>My Blog</h1>
-      <p>This is the first paragraph of my new blog.</p>
-      <p>And this is my second paragraph.  It contains a little jewel I like: Now is the time for all good men to come to the aid of their country!</p>
+
+      <h1>My Astro Learning Blog</h1>
+      <p>This is where I will post about my journey learning Astro.</p>
+      <ul>
+        <li><a href="/posts/post-1/">Post 1</a></li>
+        <li><a href="/posts/post-2/">Post 2</a></li>
+        <li><a href="/posts/post-3/">Post 3</a></li>
+      </ul>
     </div>
-	</body>
+  </body>
 </html>
